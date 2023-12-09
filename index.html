@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Arte Helados</title>
+    <link rel="shortcut icon" href="imagenes/logo_helado_celeste.ico">
+    
+    <link rel="stylesheet" href="/style/style-index.css">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cantarell&family=Carattere&family=Gruppo&family=Quattrocento+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header id="headerGeneral"></header>
+
+    <!--presentacion pagina-->
+    <section class="container-xxl text-center p-5 presentation">
+        <div class="d-flex align-items-center justify-content-center">
+            <ul class="d-flex align-items-center justify-content-center">
+                <li>
+                    <p class="display-1 titlePresentation text-center p-5">El Arte Helados</p>
+                </li>
+            </ul>
+        </div>
+        <p class="display-6 descriptionPresentation">Haciendo los mejores helados desde 1973</p>
+    </section>
+
+
+    <!--carrusel-->
+    <section class="container-xxl sectionContainerCarrousel">
+        <article class="row presentacion-carrusel" style="column-gap: 3rem;">
+            <div class="col-4 g-0 align-items-center justify-content-center container-phrase">
+                <p class="display-3 main-phrase text-uppercase">
+                    Sabores<br>
+                    que<br>
+                    congelan<br>
+                    momentos<br>
+                    felices.
+                </p>
+            </div>
+            <div class="container-phrase-two my-5 p-5 text-center">
+                <p class="display-3 main-phrase-two text-uppercase">Sabores que congelan momentos felices.</p>
+            </div>
+            <div class="col g-0">
+                <div class="container-fluid g-0">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/carrousel/gettyimages-1150548246-2048x2048.jpg" class="d-block w-100 img-carousel" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/carrousel/gettyimages-889529868-2048x2048.jpg" class="d-block w-100 img-carousel" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/carrousel/gettyimages-125741706-2048x2048.jpg" class="d-block w-100 img-carousel" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/carrousel/gettyimages-688869808-2048x2048.jpg" class="d-block w-100 img-carousel" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/carrousel/gettyimages-1065498446-2048x2048.jpg" class="d-block w-100 img-carousel" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!--productos-->
+    <section class="container-xxl text-center">
+        <div class="d-flex justify-content-center align-items-center p-5">
+            <p class="p-5 products" id="productos">PRODUCTOS</p>
+        </div>
+
+        <div id="text-horizontal">
+            <div class="fondo-sabores d-flex justify-content-center align-items-center py-3" style="height: 100%;">
+                <p class="sabores">SABORES</p>
+            </div>
+        </div>
+        <!--parte sabores-->
+        <div class="row pb-5">
+            <!--Empiezan las tarjetas-->
+            <div class="col">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <!--tarjeta 1-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Cremas</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-1" style="height: 3rem;">
+                                    <a href="#exampleModalLive-1">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-1" tabindex="-1" aria-labelledby="exampleModalLiveLabel-1" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Cremas</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Vainilla</li>
+                                        <li>Crema Americana</li>
+                                        <li>Crema Americana con Almendras</li>
+                                        <li>Crema Oreo</li>
+                                        <li>Baileys</li>
+                                        <li>Crema Rusa</li>
+                                        <li>Mascarpone</li>
+                                        <li>Crema del Cielo</li>
+                                        <li>Granizado</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-7"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tarjeta 2-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Dulce de leche</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-2" style="height: 3rem;">
+                                    <a href="#exampleModalLive-2">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-2" tabindex="-1" aria-labelledby="exampleModalLiveLabel-2" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Dulce de Leche</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Dulce de Leche</li>
+                                        <li>Dulce de Leche Granizado</li>
+                                        <li>Super Dulce de Leche</li>
+                                        <li>Dulce de Leche con Almendras</li>
+                                        <li>Dulce de Leche della Nonna</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-1"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tarjeta 3-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Chocolates</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-3" style="height: 3rem;">
+                                    <a href="#exampleModalLive-3">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-3" tabindex="-1" aria-labelledby="exampleModalLiveLabel-3" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Chocolates</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Chocolate Suizo</li>
+                                        <li>Chocolate Amargo</li>
+                                        <li>Chocolate Blanco</li>
+                                        <li>Chocolate con Almendras</li>
+                                        <li>Chocolate Italiano</li>
+                                        <li>Chocolate al Rum</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-2"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tarjeta 4-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Frutales</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-4" style="height: 3rem;">
+                                    <a href="#exampleModalLive-4">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-4" tabindex="-1" aria-labelledby="exampleModalLiveLabel-4" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Frutales</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <li>Frutilla al Agua</li>
+                                    <li>Frambuesa</li>
+                                    <li>Limon</li>
+                                    <li>Maracuya</li>
+                                    <li>Anana</li>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-3"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tarjeta 5-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Especiales</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-5" style="height: 3rem;">
+                                    <a href="#exampleModalLive-5">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-5" tabindex="-1" aria-labelledby="exampleModalLiveLabel-5" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Especiales</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Lemon Pie</li>
+                                        <li>Tiramisu</li>
+                                        <li>Chocotorta</li>
+                                        <li>Ferrero Rocher</li>
+                                        <li>Selva Negra</li>
+                                        <li>Franui</li>
+                                        <li>Kinotos al Whisky</li>
+                                        <li>Sambayón</li>
+                                        <li>Frutos Rojos</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-4"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tarjeta 6-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Veganos</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-6" style="height: 3rem;">
+                                    <a href="#exampleModalLive-6">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-6" tabindex="-1" aria-labelledby="exampleModalLiveLabel-6" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Veganos</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Limón</li>
+                                        <li>Melón</li>
+                                        <li>Banana Split</li>
+                                        <li>Frambuesa</li>
+                                        <li>Dulce de Leche Veggie</li>
+                                        <li>Chocolate Veggie</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-5"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-7"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tarjeta 7-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Sin azúcar</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-7" style="height: 3rem;">
+                                    <a href="#exampleModalLive-7">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-7" tabindex="-1" aria-labelledby="exampleModalLiveLabel-7" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Sin Azúcar</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Anana</li>
+                                        <li>Frutilla</li>
+                                        <li>Americana</li>
+                                        <li>Limón</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-6"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2" id="text-vertical">
+                <div class="text-center fondo-sabores d-flex justify-content-center align-items-center" style="height: 100%;">
+                    <p class="display-6 sabores">S<br>A<br>B<br>O<br>R<br>E<br>S</p>
+                </div>
+            </div>
+        </div>
+
+        <!--parte variedad-->
+        <div id="text-horizontal">
+            <div class="fondo-sabores d-flex justify-content-center align-items-center py-3 m-0 g-0" style="height: 100%;">
+                <p class="sabores">VARIEDAD</p>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-2" id="text-vertical">
+                <div class="text-center fondo-sabores d-flex justify-content-center align-items-center" style="height: 100%;">
+                    <p class="display-6 sabores">V<br>A<br>R<br>I<br>E<br>D<br>A<br>D</p>
+                </div>
+            </div>
+            <!--empiezan las tarjetas-->
+
+                <!--tarjeta 8-->
+            <div class="col">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Paletas</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-8" style="height: 3rem;">
+                                    <a href="#exampleModalLive-8">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-8" tabindex="-1" aria-labelledby="exampleModalLiveLabel-8" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Paletas</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col">
+                                        <p class="modal-ice-cream-info">Cremas</p>
+                                        <ul>
+                                            <li>Frutilla</li>
+                                            <li>Americana</li>
+                                            <li>Dulce de Leche</li>
+                                            <li>Bombon</li>
+                                            <li>Granizado</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <p class="modal-ice-cream-info">Al agua</p>
+                                        <ul>
+                                            <li>Limón</li>
+                                            <li>Frutilla</li>
+                                            <li>Uva</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-11"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-9"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tarjeta 9-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Bombones</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-9" style="height: 3rem;">
+                                    <a href="#exampleModalLive-9">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-9" tabindex="-1" aria-labelledby="exampleModalLiveLabel-9" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Bombones</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <ul>
+                                        <li>Bombon suizo</li>
+                                        <li>Crocantes</li>
+                                        <li>Tres sabores</li>
+                                        <li>Franui</li>
+                                        <li>Chomp</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-8"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-10"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tarjeta 10-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Tortas Heladas</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-10" style="height: 3rem;">
+                                    <a href="#exampleModalLive-10">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-10" tabindex="-1" aria-labelledby="exampleModalLiveLabel-10" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Tortas Heladas</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <ul>
+                                        <li>Chesscake</li>
+                                        <li>Chesscake Frutos Rojos</li>
+                                        <li>Selva Negra</li>
+                                        <li>Lemon Pie</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-9"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-11"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tarjeta 11-->
+                    <div class="m-3">
+                        <div class="card px-0 g-col" style="width: 20rem;">
+                            <div class="card-body p-0 text-center">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+                                    <h4 class="card-title">Postres</h4>
+                                </div>
+                                <div class="card-footer m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModalLive-11" style="height: 3rem;">
+                                    <a href="#exampleModalLive-11">
+                                        <span class="m-0">Ver mas</span>
+                                        <i class="bi bi-plus-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="exampleModalLive-11" tabindex="-1" aria-labelledby="exampleModalLiveLabel-11" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-2 modal-ice-cream-info" id="exampleModalLiveLabel">Postres</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <ul>
+                                        <li>Copa Don Pedo</li>
+                                        <li>Brownie</li>
+                                        <li>Barco Banana Split</li>
+                                        <li>Waffles</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <i class="btn bi bi-arrow-left-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-10"></i>
+                                    <i class="btn bi bi-arrow-right-short" style="font-size: 24px;" data-bs-toggle="modal" data-bs-target="#exampleModalLive-8"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xxl text-center">
+        <div class="d-flex justify-content-center align-items-center p-5">
+            <p class="p-5 presentation-more-about-us" id="empresa">Conoce más sobre nosotros</p>
+        </div>
+        <!--navegador pantallas mayores a 806px-->
+        <div id="nav--for--more--"></div>
+        
+        <!--navegador pantallas mas chicas-->
+        <div id="nav--for--less--"></div>
+        
+
+    </section>
+
+    <!--sucursales-->
+    <section class="container-xxl text-center">
+        <div class="d-flex justify-content-center align-items-center flex-column p-5">
+            <p class="p-5 presentation-more-about-us" id="sucursales">Sucursales</p>
+            <div class="row content-sucursales">
+                <div class="col py-5">
+                    <p class="fs-4 content-sucursales-description fw-bold">Contamos con sucursales en todo el AMBA. ¡Consulta el local más cercano a tu ubicación!</p>
+                    <div class="d-flex justify-content-center align-items-center my-5" id="app">
+                        <select class="form-select buscar-local" aria-label="Default select example" id="selectorLocal">
+                            <option selected>Local</option>
+                            <option v-for="local in locales">{{local.municipio_local}} -- {{local.nombre_local}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footerGeneral"></footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!--VUE-->
+    <script src="/js/footerGeneral.js"></script>
+    <script src="/js/headerGeneral.js"></script>
+    <script src="/js/procesar_eliminar_grabar.js"></script>
+    <script src="/js/index-complement/nav--for--more--.js"></script>
+    <script src="/js/index-complement/nav--for--less--.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,174 @@
+.presentation {
+    margin: 5rem 0;
+}
+
+.titlePresentation, .descriptionPresentation{
+    color: #04C4D9;
+}
+
+.textMotto, .products, .card-title, .modal-ice-cream-info, .presentation-more-about-us, .content-sucursales-description{
+    color:#F4896B !important;
+}
+
+.container-phrase, .container-phrase-two, .sabores{
+    color: #fff;
+}
+
+.container-phrase, .fondo-sabores{
+    background-color: #F4896B;
+}
+
+/* .content-sucursales{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */
+
+.titlePresentation {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+
+.titlePresentation, .textMotto, .name {
+    font-family: 'Carattere', cursive;
+}
+
+.main-phrase, .main-phrase-two, .products, .sabores, .presentation-more-about-us{
+    font-family: 'Bebas Neue', sans-serif!important;
+}
+
+.container-phrase{
+    display: flex;
+}
+
+.container-phrase-two{
+    display: none;
+}
+
+
+.textMotto {
+    letter-spacing: 0.5rem;
+}
+
+.products, .presentation-more-about-us{
+    letter-spacing: 2rem;
+}
+
+.products, .presentation-more-about-us, #sucursales{
+    font-size: 3rem;
+}
+
+.form-select{
+    max-width: max-content;
+}
+
+#nav--for--less--{
+    display: none;
+}
+
+.section-container-log{
+    min-height: 100vh;
+}
+
+.btn-log-in{
+    border-color: #04C4D9 !important;
+    border-style: solid !important;
+    color: #04C4D9 !important;
+}
+
+.btn-log-in:hover{
+    background-color: #04C4D9 !important;
+    color: #fff !important;
+}
+
+.div-form {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 2rem;
+}
+
+#text-vertical{
+    display:block;
+}
+
+#text-horizontal{
+    display:none;
+}
+
+.buscar-local{
+    font-size: 1.5rem !important;
+}
+
+.log-in{
+    color: #04C4D9;
+}
+
+
+@media (max-width: 880px){
+    .presentacion-carrusel{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container-phrase-two{
+        display: flex;
+        background-color: #F4896B;
+    }
+
+    .container-phrase{
+        display: none !important;
+    }
+
+    #nav--for--more--{
+        display: none;
+    }
+
+    #nav--for--less--{
+        display: block;
+    }
+
+    .products, .sabores, .presentation-more-about-us, #sucursales{
+        font-size: 2rem;
+        letter-spacing: 0.6rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #text-vertical{
+        display:none;
+    }
+
+    #text-horizontal{
+        display:block;
+    }
+
+    .buscar-local{
+        font-size: 1rem !important;
+    }
+
+    .products, .sabores, .presentation-more-about-us, #sucursales{
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .card{
+        width: 13.5rem !important;
+    }
+
+    .m-3{
+        margin: 0 !important;
+    }
+
+    .div-form {
+        box-shadow: none;
+        border-radius: 0rem;
+    }
+
+    .welcome{
+        border-bottom: solid 1px #6b6b6bb1;
+    }
+}
+
+@media (max-width: 380px){
+    .buscar-local{
+        font-size: 1rem !important;
+    }
+}

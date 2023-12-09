@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Gestor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../../../style/style-gestor.css">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cantarell&family=Carattere&family=Gruppo&family=Quattrocento+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logo_helado_celeste.png">
+</head>
+<body>
+    <header id="headerGestor"></header>
+    
+    <section class="container mt-5">
+        <div class="d-flex align-items-center p-5 section-inicio change-to-column">
+            <img src="../../../images/Houseice-home.svg" class="ice-home mx-1">
+            <a href="../inicio/gestor.html" class="inicio change-font-size mx-1 fw-bold">Inicio \</a>
+            <a href="productos.html" class="inicio change-font-size mx-1 fw-bold">Productos \</a>
+            <a href="#" class="inicio change-font-size mx-1 fw-bold">Editar producto</a>
+        </div>
+        <main class="d-flex justify-content-center align-items-center m-5">
+            <div class="card p-5" id="app">
+                <form>
+                    <p class="fs-2">Editar Producto</p>
+                    <div class="row mb-3 change-to-column">
+                        <label class="col" for="id_producto">ID</label>
+                        <input class="col" type="number" name="id_producto" id="id_producto" disabled v-model="id_producto">
+                    </div>
+                    <div class="row mb-3 change-to-column">
+                        <label class="col" for="nombre_producto">Nombre</label>
+                        <input class="col" type="text" name="nombre_producto" id="nombre_producto" v-model="nombre_producto" :placeholder="nombre_producto">
+                    </div>
+                    <div class="row mb-3 change-to-column">
+                        <label class="col" for="descripcion_producto">Descripcion</label>
+                        <input class="col" type="text" name="descripcion_producto" id="descripcion_producto" v-model="descripcion_producto">
+                    </div>
+                    <div class="row mb-3 change-to-column">
+                        <label class="col" for="precio_producto">Precio</label>
+                        <input class="col" type="number" name="precio_producto" id="precio_producto" v-model="precio_producto">
+                    </div>
+                    <div class="row mb-3 change-to-column">
+                        <label class="col" for="stock_producto">Stock</label>
+                        <input class="col" type="number" name="stock_producto" id="stock_producto" v-model="stock_producto">
+                    </div>
+                    <div class="row mb-3 change-to-column">
+                        <label class="col" for="imagen_producto">Imagen</label>
+                        <input class="col" type="text" name="imagen_producto" id="imagen_producto" v-model="imagen_producto">
+                        <img width="100" :src="imagen_producto" alt="">
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-log-in" v-on:click="modificarProducto()">Guardar cambios</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </section>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!--VUE-->
+    <script src="../../../js/editar.js"></script>
+    <script src="../../../js/headerGestor.js"></script>
+</body>
+</html>

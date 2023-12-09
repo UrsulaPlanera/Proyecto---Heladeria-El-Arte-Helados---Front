@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Arte Helados</title>
+    <link rel="shortcut icon" href="imagenes/logo_helado_celeste.ico">
+    <!--pagina de css-->
+    <link rel="stylesheet" href="../../style/style-index.css">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cantarell&family=Carattere&family=Gruppo&family=Quattrocento+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="headerGeneral"></header>
+
+    <section class="container d-flex flex-column justify-content-center align-items-center my-5 section-container-log">
+        <main class="row">
+            <section class="col d-flex justify-content-center align-items-center welcome">
+                <div class="mx-5">
+                    <p class="display-4 mb-5 log-in fw-bold">Bienvenido</p>
+                </div>
+            </section>
+            <section class="col div-form p-5 mx-5">
+                <div class="text-center">
+                    <p class="fs-1">Ingreso</p> 
+                    <p class="fs-5">(autorizados)</p>
+                </div>
+                <div>
+                    <form id="form">
+                        <div class="mb-3 d-flex flex-column justify-content-center align-items-center">
+                            <label class="form-label">Usuario</label>
+                            <input type="text" id="input-usuario">
+                        </div>
+                        <div class="mb-3 d-flex flex-column justify-content-center align-items-center">
+                            <label class="form-label">Contraseña</label>
+                            <input type="password" id="input-contraseña">
+                        </div>
+                        <div class="mb-3 d-flex flex-column justify-content-center align-items-center">
+                            <label class="form-label">Code unico</label>
+                            <input type="number" id="input-code">
+                        </div>
+                        <div class="mb-3 text-center">
+                            <button type="submit" class="btn btn-log-in">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <footer id="footerGeneral"></footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!--VUE-->
+    <script src="../../js/footerGeneral.js"></script>
+    <script src="../../js/headerGeneral.js"></script>
+    <script src="../../js/formulario_log_in.js"></script>
+</body>
+</html>

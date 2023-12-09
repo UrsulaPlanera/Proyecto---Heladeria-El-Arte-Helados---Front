@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Arte Helados</title>
+    <link rel="shortcut icon" href="../../../images/cono_helado_rosa.png">
+    <!--pagina de css-->
+    <link rel="stylesheet" href="../../../style/style-gestor.css">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cantarell&family=Carattere&family=Gruppo&family=Quattrocento+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="headerGestor"></header>
+
+    <section class="container-fluid container-shop">
+        <main class="container my-5 d-flex flex-column change-to-column" id="app">
+            <!--guia-->
+            <div class="d-flex align-items-center p-5 section-inicio change-to-column">
+                <img src="../../../images/Houseice-home.svg" class="ice-home mx-1">
+                <a href="../inicio/gestor.html" class="inicio fs-3 mx-1 fw-bold">Inicio \</a>
+                <a href="registros.html" class="inicio fs-3 mx-1 fw-bold">Ventas \</a>
+                <a href="#" class="inicio fs-3 mx-1 fw-bold">Nueva venta</a>
+            </div>
+            <div class="my-5">
+                <p class="fs-5">Consultar precios en lista de productos</p>
+                <select class="form-select fs-5" aria-label="Default select example">
+                    <option selected>Productos</option>
+                    <option v-for="producto in productos">{{producto.nombre_producto}} -- ${{producto.precio_producto}}</option>
+                </select>
+            </div>
+            <h1 class="mt-5">Datos de Compra</h1>
+            <form>
+                <div class="seleccionar-local mb-3">
+                    <label for="local_registro" class="form-label">Local</label>
+                    <select class="col form-select" aria-label="Default select example" id="local_registro" v-model="local_registro">
+                        <option selected>Local</option>
+                        <option v-for="local in locales" :value="local.id_unico_local">{{local.municipio_local}} -- {{local.nombre_local}}</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="monto_registro" class="form-label">Monto</label>
+                    <input type="number" class="form-control" id="monto_registro" v-model="monto_registro">
+                </div>
+                <div class="text-center">
+                <button type="button" class="btn btn-log-in" v-on:click="grabarRegistro()"><span class="btn-confirm-shop">Confirmar compra</span></button>
+                </div>
+            </form>
+        </main>
+    </section>
+
+    <footer id="footerGeneral"></footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!--VUE-->
+    <script src="../../../js/headerGestor.js"></script>
+    <script src="../../../js/procesar_eliminar_grabar.js"></script>
+</body>
+</html>

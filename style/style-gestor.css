@@ -1,0 +1,96 @@
+.icon-come-back{
+    font-size: 1.5rem;
+}
+
+.come-back:active{
+    background-color: #04C4D9;
+}
+
+.inicio, .icon-come-back, .come-back-text{
+    color: #04C4D9;
+}
+
+.ice-home{
+    height: 3rem;
+}
+
+.section-tables{
+    box-shadow: 10px 15px 7px 5px rgba(200,228,235,1);
+    border-radius: 1rem;
+}
+
+.section-inicio{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.section-body{
+    background-color: #04C4D9 !important;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.section-body-icon, .section-body-description{
+    color: #fff;
+}
+
+.section-footer{
+    color: #04C4D9 !important;
+}
+
+.section-body-icon{
+    font-size: 4rem;
+}
+
+
+.btn-log-out{
+    background-color: #04C4D9 !important;
+    color: #fff !important;
+}
+
+
+.btn-shop{
+    border-color: #04C4D9 !important;
+    border-style: solid !important;
+    a{
+        color: #04C4D9;
+    }
+}
+
+.btn-shop:hover{
+    border-style: none !important;
+    background-color: #04C4D9 !important;
+    .btn-confirm-shop{
+        color: #fff !important;
+    }
+    .bi.bi-cart-check-fill{
+        color: #fff !important;
+    }
+}
+
+.btn-log-in{
+    border-color: #04C4D9 !important;
+    border-style: solid !important;
+    color: #04C4D9 !important;
+}
+
+.btn-log-in:hover{
+    background-color: #04C4D9 !important;
+    color: #fff !important;
+}
+
+@media (max-width: 991.98px) {
+    .header-tab{
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .change-to-column{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .change-font-size{
+        font-size: 0.8rem !important;
+        text-align: center;
+    }
+}
