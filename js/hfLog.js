@@ -78,15 +78,6 @@ i, a, footer {
     height: 3rem;
 }
 
-.img-pink-ice-cream{
-    height: 3rem;
-}
-
-.name-page-footer{
-    font-family: 'Carattere', cursive;
-    color: #F4896B;
-}
-
 @media (max-width: 991.98px) {
     .list-nav-one, .list-nav-two{
         display: flex;
@@ -105,7 +96,7 @@ document.getElementById('footerGeneral').innerHTML = `
             <div class="container-xxl">
                 <article class="d-flex flex-wrap justify-content-between align-items-center py-4 mt-4 change-to-column">
                     <div class="col-md-4">
-                        <span class="mb-0 name-page-footer fs-4">ElArte Helados</span>
+                    <span class="mb-0 name-page-footer fs-6">@Codo a Codo 2023</span>
                         <a class="fs-6 mx-1" href="log-intranet.html">Intranet</a>
                     </div>
                     <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -161,7 +152,6 @@ i, a, footer {
 }
 
 .name-page-footer{
-    font-family: 'Carattere', cursive;
     color: #F4896B;
 }
 
