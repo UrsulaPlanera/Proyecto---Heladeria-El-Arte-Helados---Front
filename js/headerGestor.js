@@ -15,7 +15,7 @@ document.getElementById('headerGestor').innerHTML=`
                             </ul>
                             <ul class="nav d-flex list-nav-two">
                                 <li class="p-3">
-                                    <a class="btn btn-log-out" href="../../general/index.html">Salir</a>
+                                    <a class="btn btn-log-out" href="../../../index.html">Salir</a>
                                 </li>
                             </ul>
                         </div>

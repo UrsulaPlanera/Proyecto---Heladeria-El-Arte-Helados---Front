@@ -14,7 +14,7 @@
     color: #fff;
 }
 
-.container-phrase, .fondo-sabores{
+.container-phrase, .fondo-sabores, .ice-cream-back{
     background-color: #F4896B;
 }
 
@@ -44,6 +44,9 @@
     display: none;
 }
 
+.ice-cream {
+    height: 2rem;
+}
 
 .textMotto {
     letter-spacing: 0.5rem;
@@ -52,6 +55,7 @@
 .products, .presentation-more-about-us{
     letter-spacing: 2rem;
 }
+
 
 .products, .presentation-more-about-us, #sucursales{
     font-size: 3rem;
@@ -89,9 +93,6 @@
     display:block;
 }
 
-#text-horizontal{
-    display:none;
-}
 
 .buscar-local{
     font-size: 1.5rem !important;
@@ -101,11 +102,20 @@
     color: #04C4D9;
 }
 
+.img-derretido {
+    display: none;
+}
+
 
 @media (max-width: 880px){
     .presentacion-carrusel{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    .img-derretido{
+        display: flex;
+        width: 100%;
     }
 
     .container-phrase-two{
@@ -133,11 +143,7 @@
 
 @media (max-width: 767.98px) {
     #text-vertical{
-        display:none;
-    }
-
-    #text-horizontal{
-        display:block;
+        background-color: #F4896B;
     }
 
     .buscar-local{
@@ -150,7 +156,7 @@
     }
 
     .card{
-        width: 13.5rem !important;
+        width: 10rem !important;
     }
 
     .m-3{
