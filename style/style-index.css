@@ -155,9 +155,7 @@
         letter-spacing: 0.3rem;
     }
 
-    .card{
-        width: 10rem !important;
-    }
+    
 
     .m-3{
         margin: 0 !important;
@@ -173,8 +171,18 @@
     }
 }
 
+@media (max-width: 500px){
+    .card{
+        width: 15rem !important;
+    }
+}
+
 @media (max-width: 380px){
     .buscar-local{
         font-size: 1rem !important;
+    }
+
+    .card{
+        width: 11rem !important;
     }
 }
