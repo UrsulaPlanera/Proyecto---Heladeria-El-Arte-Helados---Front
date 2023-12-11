@@ -72,22 +72,35 @@
 
 .section-container-log{
     min-height: 100vh;
+    max-width: 30rem;
 }
 
 .btn-log-in{
-    border-color: #04C4D9 !important;
-    border-style: solid !important;
-    color: #04C4D9 !important;
-}
-
-.btn-log-in:hover{
     background-color: #04C4D9 !important;
     color: #fff !important;
+    border-radius: 0;
 }
 
 .div-form {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 2rem;
+}
+
+.input-form-login{
+    border-style: none;
+    border-bottom: solid 1px #828282 !important;
+}
+
+.input-form-login:focus{
+    border: none;
+    outline: none;
+  }
+
+.ice-home-div{
+    border-left: solid #04C4D9;
+}
+
+.ice-home{
+    height: 5rem;
 }
 
 #text-vertical{
@@ -97,10 +110,6 @@
 
 .buscar-local{
     font-size: 1.5rem !important;
-}
-
-.log-in{
-    color: #04C4D9;
 }
 
 .img-derretido {
@@ -177,6 +186,11 @@
 
     .card{
         width: 15rem !important;
+    }
+
+    .section-container-log{
+        margin: 0 !important;
+        padding: 2rem 0 0 0 !important;
     }
 }
 
